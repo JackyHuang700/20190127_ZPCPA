@@ -21,6 +21,10 @@ $mq767: 767px;
   font-size: 27px;
 }
 
+.mb-40x.mb-40x{
+  margin-bottom: 40px;
+}
+
 .logo {
   max-width: 110px;
 }
@@ -30,7 +34,7 @@ $mq767: 767px;
   color: #212529;
 }
 .professionalTeam.professionalTeam {
-
+  background-color: #f1f7f9;
   h5{
     &:hover{
       color: #212529;
@@ -73,5 +77,15 @@ $mq767: 767px;
         background-color: $templateColor;
       }
     }
+  }
+}
+
+// 財務新聞
+.moneyNews{
+  .fw-feed-title{
+    display: none;
+  }
+  header .fw-feed-title{
+    display: none;
   }
 }
