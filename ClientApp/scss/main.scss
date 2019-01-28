@@ -1,11 +1,68 @@
 $templateColor: #ffbb38;
 
+$mq576: 576px;
+$mq767: 767px;
 
-.logo{
-  max-width: 110px;;
+//單位
+.o-6{
+  opacity: .6;
+}
+
+.fz-19x{
+  font-size: 19px;
+}
+
+.logo {
+  max-width: 110px;
 }
 
 // 專業團隊
-.professionalTeam{
-  
+.single-features-area:hover h5{
+  color: #212529;
+}
+.professionalTeam.professionalTeam {
+
+  h5{
+    &:hover{
+      color: #212529;
+    }
+  }
+
+  .line{
+    @media screen and (max-width: $mq576){
+      margin: 0 auto;
+    }
+  }
+
+  .name{
+    background-color: $templateColor;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    padding: 7px;
+  }
+
+  .list {
+    > * {
+      $local_width: 8;
+
+      position: relative;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      padding-left: #{$local_width + 6}px;
+
+      &::before {
+        content: "";
+        width: #{$local_width}px;
+        height: 8px;
+        position: absolute;
+        top: 7px;
+        left: 0;
+        z-index: 1;
+        border-radius: 50%;
+        background-color: $templateColor;
+      }
+    }
+  }
 }
