@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <!-- Favicon -->
-    <!-- <link rel="icon" href="wwwroot/cpoyVendor/credit/img/core-img/favicon.ico"> -->
-    <link rel="stylesheet" href="wwwroot/cpoyVendor/credit/style.css">
-  </head>
+  <%- include ClientApp/ejs/index_2/public/globalHead.ejs %>  
   <body>
+    <%- include ClientApp/ejs/index_2/public/globalStyle.ejs %>  
+
     <%if (htmlWebpackPlugin.options.outputFile.isProd) {%> <% for (var css in
     htmlWebpackPlugin.files.css) { %>
     <link
@@ -860,17 +856,7 @@
     </footer>
     <!-- ##### Footer Area Start ##### -->
 
-        <!-- jQuery-2.2.4 js -->
-        <script src="wwwroot/cpoyVendor/credit/js/jquery/jquery-2.2.4.min.js"></script>
-        <!-- Popper js -->
-        <script src="wwwroot/cpoyVendor/credit/js/bootstrap/popper.min.js"></script>
-        <!-- Bootstrap js -->
-        <script src="wwwroot/cpoyVendor/credit/js/bootstrap/bootstrap.min.js"></script>
-        <!-- All Plugins js -->
-        <script src="wwwroot/cpoyVendor/credit/js/plugins/plugins.js"></script>
-        <!-- Active js -->
-        <script src="wwwroot/cpoyVendor/credit/js/active.js"></script>
-
+    <%- include ClientApp/ejs/index_2/public/globalScript.ejs %> 
 
     <script src="<%= htmlWebpackPlugin.options.outputFile.vendor %>"></script>
 
