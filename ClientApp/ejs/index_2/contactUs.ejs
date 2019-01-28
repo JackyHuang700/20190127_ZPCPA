@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <%- include ClientApp/ejs/index_2/public/globalHead.ejs %>  
+  <body>
+    <%- include ClientApp/ejs/index_2/public/globalStyle.ejs %>  
+
+    <%if (htmlWebpackPlugin.options.outputFile.isProd) {%> <% for (var css in
+    htmlWebpackPlugin.files.css) { %>
+    <link
+      href="wwwroot/webpackTest<%= htmlWebpackPlugin.files.css[css] %>"
+      rel="stylesheet"
+    />
+    <% } %> <% } %>
+
+
+    <!-- Here is our page's main content -->
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- path是相對於運行webpack的位置 -->
+    <%- include ClientApp/ejs/index_2/public/header.ejs %>
+
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(wwwroot/cpoyVendor/credit/img/bg-img/13.jpg);">
+      <div class="container h-100">
+          <div class="row h-100 align-items-center">
+              <div class="col-12">
+                  <div class="breadcrumb-content">
+                      <h2>仲品聯合會計師事務所</h2>
+                      <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">仲品</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">聯繫仲品</li>
+                          </ol>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ##### Breadcrumb Area End ##### -->
+
+  <!-- ##### Contact Area Start ##### -->
+  <section class="contact-area section-padding-100-0">
+      <div class="container">
+          <div class="row">
+              <!-- Single Contact Area -->
+              <div class="col-12 col-lg-4">
+                  <div class="single-contact-area mb-100">
+                      <!-- Logo -->
+                      <a href="#" class="d-block mb-50"><img src="wwwroot/images/newLogo.jpg" alt=""></a>
+                      <p>歡迎您的來電，我們將竭誠為您服務</p>
+                  </div>
+              </div>
+
+
+              <!-- Single Contact Area -->
+              <div class="col-12 col-lg-4">
+                  <div class="single-contact-area mb-100">
+                      <div class="contact--area contact-page">
+                          <!-- Contact Content -->
+                          <div class="contact-content">
+                              <h5>仲品資訊</h5>
+
+                              <!-- Single Contact Content -->
+                              <div class="single-contact-content d-flex align-items-center">
+                                  <div class="icon">
+                                      <img src="wwwroot/cpoyVendor/credit/img/core-img/location.png" alt="">
+                                  </div>
+                                  <div class="text">
+                                      <p>40353<br />台中市西區梅亭街686號</p>
+                                  </div>
+                              </div>
+                              <!-- Single Contact Content -->
+                              <div class="single-contact-content d-flex align-items-center">
+                                  <div class="icon">
+                                      <!-- <img src="wwwroot/cpoyVendor/credit/img/core-img/call.png" alt=""> -->
+                                      <i class="fas fa-mobile-alt fz-17x"></i>
+                                  </div>
+                                  <div class="text">
+                                      <p>0952-387482</p>
+                                      <span>星期一 - 五, <br />08:30.AM - 05:30.PM</span>
+                                  </div>
+                              </div>
+                              <!-- Single Contact Content -->
+                              <div class="single-contact-content d-flex align-items-center">
+                                  <div class="icon">
+                                      <!-- <img src="wwwroot/cpoyVendor/credit/img/core-img/message2.png" alt=""> -->
+                                      <i class="fas fa-envelope-open-text fz-17x"></i>
+                                  </div>
+                                  <div class="text">
+                                      <p>jacobchen0423@gmail.com</p>
+                                      <span>以最快的速度回覆您，歡迎您的來信</span>
+                                  </div>
+                              </div>
+                              <!-- Single Contact Content -->
+                              <div class="single-contact-content d-flex align-items-center">
+                                  <div class="icon">
+                                      <!-- <img src="wwwroot/cpoyVendor/credit/img/core-img/message2.png" alt=""> -->
+                                      <i class="fas fa-phone fz-17x"></i>
+                                  </div>
+                                  <div class="text">
+                                      <p>04-23265939</p>
+                                      <span>手機</span>
+                                  </div>
+                              </div>
+                              <!-- Single Contact Content -->
+                              <div class="single-contact-content d-flex align-items-center">
+                                  <div class="icon">
+                                      <!-- <img src="wwwroot/cpoyVendor/credit/img/core-img/message2.png" alt=""> -->
+                                      <i class="fas fa-fax fz-17x"></i>
+                                  </div>
+                                  <div class="text">
+                                      <p>04-23265839</p>
+                                      <span>傳真</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Single Contact Area -->
+              <div class="col-12 col-lg-4">
+                  <div class="single-contact-area mb-100">
+                      <div class="contact-advisor">
+                          <h5>聯繫仲品</h5>
+                          <!-- Single Advisor -->
+                          <div class="single-advisor d-flex align-items-center">
+                              <div class="advisor-img">
+                                  <img class="img-thumbnail" src="wwwroot/cpoyVendor/credit/img/bg-img/25.jpg" alt="">
+                              </div>
+                              <div class="advisor-info">
+                                  <h6>陳俊仲 會計師</h6>
+                                  <h6>Jacob Chen</h6>
+                                  <span>CPA</span>
+                                  <p>0952-387482</p>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+
+      <!-- ##### Google Maps ##### -->
+      <div class="map-area">
+          <iframe src="http://maps.google.com.tw/maps?f=q&amp;hl=zh-TW&amp;geocode=&amp;q=台中市西區梅亭街686號&amp;z=16&amp;output=embed&amp;t=" allowfullscreen></iframe>
+          <!-- Contact Area -->
+          <div class="contact---area">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-12 col-lg-8">
+                          <!-- Contact Area -->
+                          <div class="contact-form-area contact-page d-none">
+                              <h4 class="mb-50">Send a message</h4>
+
+                              <form action="#" method="post">
+                                  <div class="row">
+                                      <div class="col-lg-6">
+                                          <div class="form-group">
+                                              <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                          <div class="form-group">
+                                              <input type="email" class="form-control" id="email" placeholder="Your E-mail">
+                                          </div>
+                                      </div>
+                                      <div class="col-12">
+                                          <div class="form-group">
+                                              <input type="text" class="form-control" id="subject" placeholder="Your Subject">
+                                          </div>
+                                      </div>
+                                      <div class="col-12">
+                                          <div class="form-group">
+                                              <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                          </div>
+                                      </div>
+                                      <div class="col-12">
+                                          <button class="btn credit-btn mt-30" type="submit">Send</button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ##### Contact Area End ##### -->
+
+    <%- include ClientApp/ejs/index_2/public/footer.ejs %>
+
+    <%- include ClientApp/ejs/index_2/public/globalScript.ejs %> 
+
+    <script src="<%= htmlWebpackPlugin.options.outputFile.vendor %>"></script>
+
+    <%if (htmlWebpackPlugin.options.outputFile.isProd) {%> <% for (var chunk in
+    htmlWebpackPlugin.files.chunks) { %>
+    <script src="wwwroot/webpackTest<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %> <%} else {%> <% for (var chunk in htmlWebpackPlugin.files.chunks) {
+    %>
+    <script src="http://localhost:<%= htmlWebpackPlugin.options.outputFile.port %><%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %> <% } %>
+
+  </body>
+</html>
