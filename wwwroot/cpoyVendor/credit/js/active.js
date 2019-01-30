@@ -138,6 +138,20 @@
             thickness: '3',
             reverse: true
         });
+        $('#circle10').circleProgress({
+            size: 90,
+            emptyFill: "rgba(0, 0, 0, .0)",
+            fill: '#fff',
+            thickness: '3',
+            reverse: true
+        });
+        $('#circle11').circleProgress({
+            size: 90,
+            emptyFill: "rgba(0, 0, 0, .0)",
+            fill: '#fff',
+            thickness: '3',
+            reverse: true
+        });
     }
 
     // :: 7.0 Tooltip Active Code
@@ -166,7 +180,10 @@
 
     // :: 11.0 Wow Active Code
     if (browserWindow.width() > 767) {
-        new WOW().init();
+        var opean = false;
+        if (open) {
+            new WOW().init();
+        }
     }
 
 })(jQuery);
