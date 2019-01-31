@@ -61,7 +61,7 @@
     if ($.fn.scrollUp) {
         browserWindow.scrollUp({
             scrollSpeed: 1500,
-            scrollText: '<i class="fa fa-angle-up"></i> Top'
+            scrollText: '<i class="fa fa-angle-up"></i>'
         });
     }
 
@@ -135,6 +135,20 @@
             size: 90,
             emptyFill: "rgba(0, 0, 0, .0)",
             fill: '#ffbb38',
+            thickness: '3',
+            reverse: true
+        });
+        $('#circle10').circleProgress({
+            size: 90,
+            emptyFill: "rgba(0, 0, 0, .0)",
+            fill: '#fff',
+            thickness: '3',
+            reverse: true
+        });
+        $('#circle11').circleProgress({
+            size: 90,
+            emptyFill: "rgba(0, 0, 0, .0)",
+            fill: '#fff',
             thickness: '3',
             reverse: true
         });
