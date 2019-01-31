@@ -14,15 +14,8 @@
 
 
     <!-- Here is our page's main content -->
-    <!-- Preloader -->
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+    <%- include ClientApp/ejs/index_2/public/loader.ejs %>
+
 
     <!-- path是相對於運行webpack的位置 -->
     <%- include ClientApp/ejs/index_2/public/header.ejs %>
@@ -45,7 +38,7 @@
           </div>
       </div>
   </section>
-  <!-- ##### Breadcrumb Area End ##### -->
+  <!-- ##### Breadcrumb Area Endpreloader ##### -->
 
   <!-- ##### Contact Area Start ##### -->
   <section class="contact-area section-padding-100-0">
@@ -135,7 +128,7 @@
                           <!-- Single Advisor -->
                           <div class="single-advisor d-flex align-items-center">
                               <div class="advisor-img">
-                                  <img class="img-thumbnail" src="wwwroot/cpoyVendor/credit/img/bg-img/25.jpg" alt="">
+                                  <img class="img-thumbnail" src="wwwroot/images/professionalTeam/Chen.jpg" alt="">
                               </div>
                               <div class="advisor-info">
                                   <h6>陳俊仲 會計師</h6>
@@ -155,7 +148,7 @@
 
       <!-- ##### Google Maps ##### -->
       <div class="map-area">
-          <iframe src="http://maps.google.com.tw/maps?f=q&amp;hl=zh-TW&amp;geocode=&amp;q=台中市西區梅亭街686號&amp;z=16&amp;output=embed&amp;t=" allowfullscreen></iframe>
+          <iframe src="https://maps.google.com.tw/maps?f=q&amp;hl=zh-TW&amp;geocode=&amp;q=台中市西區梅亭街686號&amp;z=16&amp;output=embed&amp;t=" allowfullscreen></iframe>
           <!-- Contact Area -->
           <div class="contact---area">
               <div class="container">

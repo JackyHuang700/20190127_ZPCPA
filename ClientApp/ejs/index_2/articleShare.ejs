@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<hpreloadertml lang="zh-TW">
   <%- include ClientApp/ejs/index_2/public/globalHead.ejs %>  
   <body>
     <%- include ClientApp/ejs/index_2/public/globalStyle.ejs %>  
@@ -14,15 +14,7 @@
 
 
     <!-- Here is our page's main content -->
-    <!-- Preloader -->
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+    <%- include ClientApp/ejs/index_2/public/loader.ejs %>
 
     <!-- path是相對於運行webpack的位置 -->
     <%- include ClientApp/ejs/index_2/public/header.ejs %>
@@ -47,7 +39,7 @@
   </section>
   <!-- ##### Breadcrumb Area End ##### -->
 
-    <section class="articleShare">
+    <section class="articleShare bgcColor">
         <section class="team-area section-padding-100-0">
         <div class="container">
             <div class="row">
@@ -55,8 +47,8 @@
                     <!-- Section Heading -->
                     <div class="section-heading text-center mb-100">
                         <div class="line"></div>
-                        <p>Take look at our</p>
-                        <h2>Our team</h2>
+                        <p>於您分享</p>
+                        <h2>專業文章分享</h2>
                     </div>
                 </div>
             </div>
@@ -77,7 +69,7 @@
                     </ul>
         
                     <div class="tab-content mb-100" id="myTabContent">
-                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                        <div class="tab-pane fade animated fadeIn show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
                             <div class="credit-tab-content">
                                 <!-- Tab Text -->
                                 <div class="credit-tab-text">
@@ -666,7 +658,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="tab2" role="tab2" aria-labelledby="tab--2">
+                        <div class="tab-pane fade animated fadeIn" id="tab2" role="tab2" aria-labelledby="tab--2">
                             <div class="credit-tab-content">
                                 <!-- Tab Text -->
                                 <div class="credit-tab-text">
@@ -780,7 +772,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="tab3" role="tab3" aria-labelledby="tab--3">
+                        <div class="tab-pane fade animated fadeIn" id="tab3" role="tab3" aria-labelledby="tab--3">
                             <div class="credit-tab-content">
                                 <!-- Tab Text -->
                                 <div class="credit-tab-text">
@@ -905,4 +897,4 @@
     <% } %> <% } %>
 
   </body>
-</html>
+</hpreloadertml>

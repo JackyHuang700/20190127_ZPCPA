@@ -14,15 +14,7 @@
 
 
     <!-- Here is our page's main content -->
-    <!-- Preloader -->
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+    <%- include ClientApp/ejs/index_2/public/loader.ejs %>
 
     <!-- path是相對於運行webpack的位置 -->
     <%- include ClientApp/ejs/index_2/public/header.ejs %>
@@ -43,7 +35,7 @@
                                 <!-- <h6 data-animation="fadeInUp" data-delay="100ms"></h6> -->
                                 <h2 data-animation="fadeInUp" data-delay="300ms"><span>仲品</span>聯合會計師事務所</h2>
                                 <p data-animation="fadeInUp" data-delay="500ms">專業負責的態度</p>
-                                <a href="#" class="btn credit-btn mt-50" data-animation="fadeInUp" data-delay="700ms">立即聯絡</a>
+                                <a href="index.html" class="btn credit-btn mt-50" data-animation="fadeInUp" data-delay="700ms">立即聯絡</a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +56,7 @@
                                 <!-- <h6 data-animation="fadeInDown" data-delay="100ms">值得信賴</h6> -->
                                 <h2 data-animation="fadeInUp" data-delay="300ms"><span>仲品</span>聯合會計師事務所</h2>
                                 <p data-animation="fadeInDown" data-delay="500ms">秉持熱忱之專業素養</p>
-                                <a href="#" class="btn credit-btn mt-50" data-animation="fadeInDown" data-delay="700ms">立即聯絡</a>
+                                <a href="index.html" class="btn credit-btn mt-50" data-animation="fadeInDown" data-delay="700ms">立即聯絡</a>
                             </div>
                         </div>
                     </div>
@@ -211,7 +203,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-3">
                             <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="300ms">
-                                <img class="img-thumbnail" src="wwwroot/cpoyVendor/credit/img/bg-img/2.jpg" alt="">
+                                <img class="img-thumbnail" src="wwwroot/images/professionalTeam/Chen.jpg" alt="">
                                 <h5 class="mb-2">所長</h5>
                                 <h4 class="name mb-4 fz-19x">陳俊仲</h4>
                                 <h5 class="my-3">學經歷</h5>
@@ -235,7 +227,7 @@
                         </div>
                         <div class="col-12 col-sm-6 col-md-3">
                             <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-                                <img class="img-thumbnail" src="wwwroot/cpoyVendor/credit/img/bg-img/3.jpg" alt="">
+                                <img class="img-thumbnail" src="wwwroot/images/professionalTeam/Kid.jpg" alt="">
                                 <h5 class="mb-2">營運長</h5>
                                 <h4 class="name mb-4 fz-19x">莊豐銘</h4>
                                 <h5 class="my-3">學經歷</h5>
@@ -258,8 +250,9 @@
                         </div>
                         <div class="col-12 col-sm-6 col-md-3">
                             <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="700ms">
-                                <img class="img-thumbnail" src="wwwroot/cpoyVendor/credit/img/bg-img/4.jpg" alt="">
-                                <h5 class="mb-2">帳務及工商登記部門 經理</h5>
+                                <img class="img-thumbnail" src="https://picsum.photos/175/265?image=1027" alt="">
+                                <h5 class="mb-2">工商登記部門 經理</h5>
+                                <h5 class="mb-2">帳務登記部門 經理</h5>
                                 <h4 class="name mb-4 fz-19x">鍾佳妏</h4>
                                 <h5 class="my-3">學經歷</h5>
                                 <ul class="list">
@@ -277,7 +270,7 @@
                         </div>
                         <div class="col-12 col-sm-6 col-md-3">
                             <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="900ms">
-                                <img class="img-thumbnail" src="wwwroot/cpoyVendor/credit/img/bg-img/4.jpg" alt="">
+                                <img class="img-thumbnail" src="https://picsum.photos/175/265?image=1027" alt="">
                                 <h5 class="mb-2">法律顧問</h5>
                                 <h4 class="name mb-4 fz-19x">張嘉麟 律師</h4>
                                 <h5 class="my-3">學經歷</h5>
@@ -430,7 +423,7 @@
 
     <!-- ##### Newsletter Area Start ###### -->
     <section class="newsletter-area section-padding-100 bg-img jarallax" style="background-image: url(wwwroot/cpoyVendor/credit/img/bg-img/6.jpg);">
-        <div class="container">
+        <div class="container wow fadeInUp">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-10 col-lg-8">
                     <div class="nl-content text-center">

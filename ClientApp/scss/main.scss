@@ -1,7 +1,21 @@
 $templateColor: #ffbb38;
+$bgcColor: #f1f7f9;
 
 $mq576: 576px;
 $mq767: 767px;
+
+// 字體
+@font-face {
+  font-family: 'Noto Sans TC-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+:not(i):not(span) {
+  font-family: Noto Sans TC-Light!important
+}
 
 //單位
 .o-6{
@@ -46,12 +60,35 @@ $mq767: 767px;
   text-align: right;
 }
 
+.bgcColor.bgcColor.bgcColor{
+  background-color: $bgcColor;
+}
+
+.credit-tabs-content .nav-tabs .nav-link{
+  background-color: #ddd;
+}
+
+.newsletter-area .nl-content.nl-content h2{
+  font-size: 40px;
+}
+.newsletter-area .nl-content.nl-content p{
+  font-size: 25px;
+}
+
+.breakpoint-on .classy-navbar .classy-menu.classy-menu{
+  overflow: auto;
+}
+
+#scrollUp{
+  height: 40px;
+}
+
 // 專業團隊
 .single-features-area:hover h5{
   color: #212529;
 }
 .professionalTeam.professionalTeam {
-  background-color: #f1f7f9;
+  background-color: $bgcColor;
   h5{
     &:hover{
       color: #212529;
