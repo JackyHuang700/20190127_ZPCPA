@@ -124,7 +124,7 @@ module.exports = merge(common, {
     new webpack.optimize.ModuleConcatenationPlugin(),
     // 在编译出现错误时，使用 NoEmitOnErrorsPlugin 来跳过输出阶段。这样可以确保输出资源不会包含错误。对于所有资源，统计资料(stat)的 emitted 标识都是 false
     new webpack.NoEmitOnErrorsPlugin(),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ].concat(htmlWebpackPluginSetting(modeProduction)),
   optimization: {
     minimizer: [
